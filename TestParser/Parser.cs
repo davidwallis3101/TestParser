@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,10 @@ namespace TestParser
     {
         public static string Parse(string input)
         {
-            throw new NotImplementedException();
+            var t = new Message();
+            var parts = input.Split(new string[] { ";" });
+
+
         }
     }
 }

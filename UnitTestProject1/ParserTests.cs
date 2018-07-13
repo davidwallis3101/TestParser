@@ -24,8 +24,16 @@ namespace UnitTestProject1
             child_sensor_id is the channel number, eg 1 for DIN1
 */
             //arrange
-            string inputString = "1;1;1;0;2;0"; // channel 1 status has changed to "off"
-            string expected = "test";
+            var inputString = "1;1;1;0;2;0"; // channel 1 status has changed to "off"
+            var expected = new Message
+            {
+                NodeId = 1,
+                ChildSensorId = 1,
+                Command = Command.Presentation,
+                Ack = "0",
+                Type = "2",
+                Payload = "0"
+            };
 
             //act
             var response = Parser.Parse("Something");
