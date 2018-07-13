@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TestParser
 {
-    static class Parser
+    public static class Parser
     {
+        public static string Parse(string input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

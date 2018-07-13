@@ -10,6 +10,7 @@ namespace TestParser
     {
         static void Main(string[] args)
         {
+            var testResp = Parser.Parse("Something");
         }
     }
 }
